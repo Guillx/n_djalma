@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  border-bottom: 2px solid var(--green-underline);
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.header-left-side p {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.header-left-side h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3.063rem;
+  line-height: 5rem;
+}
+
+.header-left-side a {
+  color: var(--links-blue);
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.header-left-side a:hover {
+  text-decoration: underline;
+}

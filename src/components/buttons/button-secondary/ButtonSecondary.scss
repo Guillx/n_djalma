@@ -1,0 +1,42 @@
+@import "../../../styles/base/variables";
+@import "../../../styles/base/fonts";
+@import "../../../styles/base/mixins";
+
+.button-secondary {
+  @extend .btn-container;
+  color: $color-accent-500;
+  background-color: $colorWhite;
+  border: 1px solid $color-neutral-100;
+  box-shadow: 0px 2px 4px hsl(0, 0%, 0%, 20%);
+
+  &:hover {
+    background-color: $color-neutral-50;
+  }
+  &:focus {
+    border: 4px solid $color-neutral-100;
+  }
+  &:active {
+    border: none;
+    background-color: $color-accent-50;
+  }
+}
+
+/* STYLES BTN SECONDARY DESTRUCTIVE */
+.button-secondary-destructive {
+  @extend .btn-container;
+  color: $color-error-500;
+  background-color: $colorWhite;
+  border: 1px solid $color-error-500;
+  box-shadow: 0px 2px 4px hsl(0, 0%, 0%, 20%);
+
+  &:hover {
+    background-color: $color-neutral-50;
+  }
+  &:focus {
+    border: 4px solid $color-error-100;
+  }
+  &:active  {
+    background-color: $color-error-50;
+    border: 1px solid $color-error-500;
+  }
+}

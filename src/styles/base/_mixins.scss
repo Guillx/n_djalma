@@ -1,0 +1,125 @@
+@import "../../styles/base/variables";
+
+// BASE BUTTON STYLES
+@mixin button-style {
+  width: 135px;
+  height: 48px;
+  padding: 12px 32px;
+  border-radius: 8px;
+  display: flex;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  line-height: 24px;
+  border-radius: 8px;
+}
+.btn-container {
+  @include button-style();
+}
+// BUTTON WRAPPER
+@mixin button-wrapper {
+  background-color: $colorWhite;
+  width: 557px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:first-child {
+    margin-right: 5px;
+  }
+}
+.btn-wrapper {
+  @include button-wrapper();
+}
+// BUTTON LABEL
+@mixin button-label {
+  width: 39px;
+  height: 24px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 8px;
+}
+.btn-label {
+  @include button-label();
+}
+// BUTTON ICON
+@mixin button-icon {
+  display: inline-block;
+  background-color: transparent;
+  text-align: left;
+}
+.icon {
+  @include button-icon();
+}
+
+// *-* *-* *-* * *-* *-* *-* *-* *-* *-* *-* *-* *-* *-* /
+@mixin transform($value) {
+  transform: $value;
+  -ms-transform: $value; /* IE 9 */
+  -moz-transform: $value; /* Firefox */
+  -webkit-transform: $value; /* Safari and Chrome */
+  -o-transform: $value;
+}
+
+@mixin placeholder {
+  &::placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+  &::-ms-input-placeholder {
+    @content;
+  }
+}
+
+@mixin ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin ripple($color: #fff) {
+  &:not(:disabled):not(.disabled) {
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+
+    &:after {
+      z-index: -1;
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      background-image: radial-gradient(circle, $color 10%, transparent 10.01%);
+      background-repeat: no-repeat;
+      background-position: 50%;
+      transform: scale(10, 10);
+      opacity: 0;
+      transition: transform 0.5s, opacity 1s;
+    }
+
+    &:active:after {
+      transform: scale(0, 0);
+      opacity: 0.3;
+      transition: 0s;
+    }
+  }
+}
+
+@keyframes spin-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}

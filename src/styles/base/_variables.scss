@@ -1,0 +1,268 @@
+$primaryColor: #4d4d4d;
+$backgroundColor: #212121;
+$colorWhite: #ffffff;
+
+/* COLORES */
+$brandPrimary: #594794;
+$brandSecondary: #31ecb4;
+$color-neutral-900: #222222;
+$color-neutral-300: #cccccc;
+$color-neutral-800: #333333;
+$color-neutral-200: #e0e0e0;
+$color-neutral-700: #474747;
+$color-neutral-100: #ebebeb;
+$color-neutral-600: #5c5c5c;
+$color-neutral-50: #fafafa;
+$color-neutral-500: #707070;
+$color-neutral-400: #a3a3a3;
+$color-accent-900: #211b37;
+$color-accent-300: #9f8fcc;
+$color-accent-800: #292145;
+$color-accent-200: #b7abd8;
+$color-accent-700: #3a2e60; /* Primary btn clicked*/
+$color-accent-100: #cfc7e5; /* Primary button focus border */
+$color-accent-600: #4b3c7c;
+$color-accent-50: #e7e3f2;
+$color-accent-500: #594794; /* Primary btn default, focus*/
+$color-accent-400: #7b65b8; /* Primary btn hover*/
+$color-success-900: #053829;
+$color-success-300: #7ef1ce;
+$color-success-800: #0a7052;
+$color-success-200: #a3f5dc;
+$color-success-700: #11bb88;
+$color-success-100: #c8f9ea;
+$color-success-600: #15e0a3;
+$color-success-50: #ecfdf8;
+$color-success-500: #31ecb4;
+$color-success-400: #5aedc1;
+$color-error-900: #a61d28;
+$color-error-400: #e04f58; /* Primary button destructive hover */
+$color-error-800: #b62632;
+$color-error-300: #d67077;
+$color-error-700: #c32c39; /* Primary button destructive clicked */
+$color-error-200: #e4979d;
+$color-error-600: #d5353f;
+$color-error-100: #f7cbd3; /* Primary button destructive border */
+$color-error-500: #e43e42; /* Primary button destructive default */
+$color-error-50: #fceaee;
+$color-info-900: #0f477b;
+$color-info-400: #2da5e6;
+$color-info-800: #18558e;
+$color-info-300: #3eb3ea;
+$color-info-700: #2075b0;
+$color-info-200: #85d2f3;
+$color-info-600: #2385c4;
+$color-info-100: #b4e4f8;
+$color-info-500: #2998d8;
+$color-info-50: #e1f4fc;
+$color-warning-900: #722808;
+$color-warning-400: #f28454;
+$color-warning-800: #98360b;
+$color-warning-300: #f59f7a;
+$color-warning-700: #be430e;
+$color-warning-200: #f8baa0;
+$color-warning-600: #e45011;
+$color-warning-100: #fbd6c6;
+$color-warning-500: #ef6226;
+$color-warning-50: #fef1ec;
+
+/********* BTN STYLES *********/
+$btn-MSize-width: 135px;
+$btn-MSize-height: 48px;
+$btn-MSize-padding: 12px 32px;
+$btn-border-radius: 8px;
+$btn-opacity-option: 0.5;
+
+/* FUENTES */
+@mixin primary-4XL-bold {
+  font-family: IBM Plex Sans;
+  font-size: 4.9rem;
+  font-weight: 700;
+  line-height: 7.2rem;
+}
+@mixin primary-4XL-regular {
+  font-family: IBM Plex Sans;
+  font-size: 4.9rem;
+  font-weight: 400;
+  line-height: 7.2rem;
+}
+@mixin secondary-4XL-bold {
+  font-family: IBM Plex Mono;
+  font-size: 4.9rem;
+  font-weight: 700;
+  line-height: 7.2rem;
+}
+@mixin secondary-4XL-regular {
+  font-family: IBM Plex Mono;
+  font-size: 4.9rem;
+  font-weight: 400;
+  line-height: 7.2rem;
+}
+@mixin primary-3XL-bold {
+  font-family: IBM Plex Sans;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 5.6rem;
+}
+@mixin secondary-3XL-bold {
+  font-family: IBM Plex Mono;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 5.6rem;
+}
+@mixin primary-3XL-regular {
+  font-family: IBM Plex Sans;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 5.6rem;
+}
+@mixin secondary-3XL-regular {
+  font-family: IBM Plex Mono;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 5.6rem;
+}
+@mixin primary-2XL-bold {
+  font-family: IBM Plex Sans;
+  font-size: 3.1rem;
+  font-weight: 700;
+  line-height: 3.6rem;
+}
+@mixin secondary-2XL-bold {
+  font-family: IBM Plex Mono;
+  font-size: 3.1rem;
+  font-weight: 700;
+  line-height: 3.6rem;
+}
+@mixin primary-2XL-regular {
+  font-family: IBM Plex Sans;
+  font-size: 3.1rem;
+  font-weight: 400;
+  line-height: 3.6rem;
+}
+@mixin secondary-2XL-regular {
+  font-family: IBM Plex Mono;
+  font-size: 3.1rem;
+  font-weight: 400;
+  line-height: 3.6rem;
+}
+@mixin primary-XL-bold {
+  font-family: IBM Plex Sans;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3.6rem;
+}
+@mixin secondary-XL-bold {
+  font-family: IBM Plex Mono;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3.6rem;
+}
+@mixin primary-XL-regular {
+  font-family: IBM Plex Sans;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3.6rem;
+}
+@mixin secondary-XL-regular {
+  font-family: IBM Plex Mono;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3.6rem;
+}
+@mixin primary-L-bold {
+  font-family: IBM Plex Sans;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.8rem;
+}
+@mixin secondary-L-bold {
+  font-family: IBM Plex Mono;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.8rem;
+}
+@mixin primary-L-regular {
+  font-family: IBM Plex Sans;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+}
+@mixin secondary-L-regular {
+  font-family: IBM Plex Mono;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+}
+@mixin primary-M-bold {
+  font-family: IBM Plex Sans;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+}
+@mixin secondary-M-bold {
+  font-family: IBM Plex Mono;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+}
+@mixin primary-M-regular {
+  font-family: IBM Plex Sans;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+@mixin secondary-M-regular {
+  font-family: IBM Plex Mono;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+@mixin primary-S-bold {
+  font-family: IBM Plex Sans;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+@mixin secondary-S-bold {
+  font-family: IBM Plex Mono;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+@mixin primary-S-regular {
+  font-family: IBM Plex Sans;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+@mixin secondary-S-regular {
+  font-family: IBM Plex Mono;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+@mixin primary-XS-bold {
+  font-family: IBM Plex Sans;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.6rem;
+}
+@mixin secondary-XS-bold {
+  font-family: IBM Plex Mono;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.6rem;
+}
+@mixin primary-XS-regular {
+  font-family: IBM Plex Sans;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+}
+@mixin secondary-XS-regular {
+  font-family: IBM Plex Mono;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+}
