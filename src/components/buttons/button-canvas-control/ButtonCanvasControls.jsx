@@ -1,4 +1,4 @@
-export const ButtonCanvasControls = ({ className }) => {
+export const ButtonCanvasControls = () => {
   return (
     <div className="btns-canvas-controls-container">
       <i className="icon-zoom-in icon-button-canvas"></i>
