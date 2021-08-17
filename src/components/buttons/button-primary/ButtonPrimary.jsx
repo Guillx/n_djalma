@@ -1,8 +1,10 @@
-export const ButtonPrimary = ({ className, disabled, icon, label }) => {
-  function handleClick(e) {
-    e.preventDefault();
-    alert("🤟");
-  }
+export const ButtonPrimary = ({
+  className,
+  disabled,
+  icon,
+  label,
+  handleClick,
+}) => {
   return (
     <button className={className} onClick={handleClick} disabled={disabled}>
       <i className={icon}></i>

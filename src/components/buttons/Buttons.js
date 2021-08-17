@@ -8,6 +8,15 @@ import { ButtonGroup } from "./button-group/ButtonGroup";
 import { ButtonCanvasControls } from "./button-canvas-control/ButtonCanvasControls";
 
 function Buttons() {
+  function clickPrimary(e) {
+    e.preventDefault();
+    alert("Primary Button! 🤟");
+  }
+  function clickPrimaryDestructive(e) {
+    e.preventDefault();
+    alert("Primary button destructive! 💣");
+  }
+
   return (
     <>
       <div className="body">
@@ -18,6 +27,7 @@ function Buttons() {
               className="button-primary"
               label="Label"
               icon="icon-circle icon-s"
+              handleClick={clickPrimary}
               // disabled="true"
             ></ButtonPrimary>
           </div>
@@ -27,6 +37,7 @@ function Buttons() {
               className="button-primary-destructive"
               label="Label"
               icon="icon-delete icon-s"
+              handleClick={clickPrimaryDestructive}
               // disabled="true"
             ></ButtonPrimary>
           </div>
