@@ -2,9 +2,6 @@
 
 // BASE BUTTON STYLES
 @mixin button-style {
-  width: 135px;
-  height: 48px;
-  padding: 12px 32px;
   border-radius: 8px;
   display: flex;
   outline: none;
@@ -12,7 +9,7 @@
   align-items: center;
   font-weight: 400;
   line-height: 24px;
-  border-radius: 8px;
+  padding: 12px 32px;
 }
 .btn-container {
   @include button-style();
@@ -46,7 +43,6 @@
   height: 240px;
   padding: 0 250px;
 }
-
 // BUTTON LABEL
 @mixin button-label {
   width: 39px;
@@ -76,7 +72,21 @@
 .icon-m {
   //
 }
-
+// BASE CARD STYLES
+@mixin card-style {
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 24px;
+  width: 380px;
+  height: 110px;
+  background-color: $colorWhite;
+  box-shadow: 0px 4px 8px -8px #000000;
+}
+.card-container {
+  @include card-style();
+}
 // *-* *-* *-* * *-* *-* *-* *-* *-* *-* *-* *-* *-* *-* /
 @mixin transform($value) {
   transform: $value;

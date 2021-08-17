@@ -29,10 +29,3 @@
 .btn-disabled {
   opacity: 0.5;
 }
-
-.categories-nav {
-  display: flex;
-  width: 65%;
-  margin: auto;
-  justify-content: space-around;
-}

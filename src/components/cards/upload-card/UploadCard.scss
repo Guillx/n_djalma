@@ -1,0 +1,6 @@
+@import "../../../styles/main.scss";
+
+.upload-card {
+  @extend .card-container;
+  border: 1px solid $color-neutral-100;
+}
