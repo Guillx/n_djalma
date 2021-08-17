@@ -1,0 +1,17 @@
+@import "../../../styles/main.scss";
+
+.btns-canvas-controls-container {
+  width: 168px;
+  height: 48px;
+  border-radius: 8px;
+  padding: 12px;
+  background: transparent;
+  box-shadow: $box-shadow-a;
+  display: flex;
+  justify-content: space-around;
+}
+.icon-button-canvas {
+  background: transparent;
+  font-size: 14px;
+  color: #594794;
+}

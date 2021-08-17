@@ -1,9 +1,7 @@
-export const ButtonTertiary = ({ buttonClassName, disabled, label }) => {
+export const ButtonTertiary = ({ className, disabled, label }) => {
   return (
-    <div className="btn-wrapper">
-      <button className={buttonClassName} disabled={disabled}>
-        <span className="btn-label">{label}</span>
-      </button>
-    </div>
+    <button className={className} disabled={disabled}>
+      <span className="btn-label">{label}</span>
+    </button>
   );
 };

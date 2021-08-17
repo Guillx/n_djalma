@@ -1,12 +1,11 @@
 @import "../../../styles/main.scss";
 
-/* STYLES BTN PRIMARY */
 .button-primary {
   @extend .btn-container;
   color: $colorWhite;
   background-color: $color-accent-500;
   border: 1px solid $color-neutral-100;
-  box-shadow: 0px 2px 4px hsl(0, 0%, 0%, 20%);
+  box-shadow: $box-shadow-a;
 
   &:hover {
     background-color: $color-accent-400;

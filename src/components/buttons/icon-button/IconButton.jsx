@@ -1,9 +1,7 @@
-export const IconButton = ({ buttonClassName, icon }) => {
+export const IconButton = ({ className, icon }) => {
   return (
-    <div className="btn-wrapper">
-      <button className={buttonClassName}>
-        <i className={icon}></i>
-      </button>
-    </div>
+    <button className={className}>
+      <i className={icon}></i>
+    </button>
   );
 };
