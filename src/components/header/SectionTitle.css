@@ -11,7 +11,7 @@
   font-size: 6.5rem;
   text-transform: uppercase;
   font-weight: 900;
-  text-shadow: 5px 5px 7px var(--green-underline);
+  text-shadow: 2px 5px 2px var(--green-underline);
 }
 
 .corunet-logo {

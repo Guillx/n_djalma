@@ -1,7 +1,7 @@
 import Header from "../header/Header";
-import { UploadCard } from "./upload-card/UploadCard";
-import "./cards.scss";
 import SectionTitle from "../header/SectionTitle";
+
+import { UploadCard } from "./upload-card/UploadCard";
 
 function Cards() {
   return (
@@ -11,17 +11,21 @@ function Cards() {
       <div className="page-content">
         <div className="btn-wrapper-m">
           <UploadCard
-            className="upload-card"
-            card=""
-            // disabled="true"
+            className="upload-card-default"
+            uploadCardTop="upload-card-top"
+            icon="icon-document-excel icon-l"
+            fileName="File name"
+            progressBar="upload-card-progress-bar-default"
           ></UploadCard>
         </div>
 
         <div className="btn-wrapper-m">
           <UploadCard
-            className="upload-card"
-
-            // disabled="true"
+            className="upload-card-destructive"
+            uploadCardTop="upload-card-top"
+            icon="icon-document-excel icon-l"
+            fileName="File name"
+            progressBar="upload-card-progress-bar-destructive"
           ></UploadCard>
         </div>
       </div>

@@ -27,9 +27,9 @@ function Buttons() {
           <div className="btn-wrapper-s">
             <ButtonPrimary
               className="button-primary"
-              label="Label"
+              label="Label larga para probar que se adapta al width"
               icon="icon-circle icon-s"
-              handleClick={clickPrimary}
+              onClick={clickPrimary}
               // disabled="true"
             ></ButtonPrimary>
           </div>
@@ -39,7 +39,7 @@ function Buttons() {
               className="button-primary-destructive"
               label="Label"
               icon="icon-delete icon-s"
-              handleClick={clickPrimaryDestructive}
+              onClick={clickPrimaryDestructive}
               // disabled="true"
             ></ButtonPrimary>
           </div>

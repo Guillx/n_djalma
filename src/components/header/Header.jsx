@@ -6,7 +6,7 @@ const Header = ({ title }) => {
       <div className="header-left-side">
         <p>Djalma Web</p>
         <h1>{title}</h1>
-        <a href="https://coru.net/" target="_blank">
+        <a href="https://coru.net/" target="_blank" rel="noreferrer">
           Browse documentation
         </a>
       </div>

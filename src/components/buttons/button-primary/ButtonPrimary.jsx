@@ -1,24 +1,30 @@
 import PropTypes from "prop-types";
 
+const proptypes = {
+  className: PropTypes.string.isRequired,
+  disabled: PropTypes.bool,
+  icon: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  handleClick: PropTypes.func,
+};
+
 export const ButtonPrimary = ({
   className,
   disabled,
   icon,
   label,
-  handleClick,
+  onClick,
 }) => {
   return (
-    <button className={className} onClick={handleClick} disabled={disabled}>
+    <button
+      className={`btn-primary ${className} ${disabled ? "btn-disabled" : ""}`}
+      onClick={onClick}
+      disabled={disabled}
+    >
       <i className={icon}></i>
       <span className="btn-label">{label}</span>
     </button>
   );
 };
 
-ButtonPrimary.propTypes = {
-  className: PropTypes.string.isRequired,
-  disabled: PropTypes.string,
-  icon: PropTypes.symbol.isRequired,
-  label: PropTypes.string.isRequired,
-  handleClick: PropTypes.func.isRequired,
-};
+ButtonPrimary.propTypes = proptypes;

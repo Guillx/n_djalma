@@ -1,4 +1,4 @@
-@import "../../styles/base/variables";
+@import "./variables";
 
 // BASE BUTTON STYLES
 @mixin button-style {
@@ -10,6 +10,9 @@
   font-weight: 400;
   line-height: 24px;
   padding: 12px 32px;
+  width: auto;
+  min-width: 135px;
+  box-shadow: $box-shadow-a;
 }
 .btn-container {
   @include button-style();
@@ -25,11 +28,13 @@
     margin-right: 5px;
   }
 }
+// BUTTON WRAPPER S
 .btn-wrapper-s {
   @include button-wrapper();
   width: 557px;
   height: 160px;
 }
+
 // BUTTON WRAPPER M
 .btn-wrapper-m {
   @include button-wrapper();
@@ -43,9 +48,15 @@
   height: 240px;
   padding: 0 250px;
 }
+// BUTTON WRAPPER TEXTFIELD
+.btn-wrapper-textfield {
+  @include button-wrapper();
+  width: 417px;
+  height: 200px;
+}
+
 // BUTTON LABEL
 @mixin button-label {
-  width: 39px;
   height: 24px;
   background: transparent;
   display: flex;
@@ -57,35 +68,50 @@
   @include button-label();
 }
 // BUTTON ICON
-@mixin button-icon {
+@mixin icon {
   display: flex;
-  background-color: transparent;
+  background: transparent;
   text-align: center;
   justify-content: center;
   align-items: center;
 }
+.icon-xs {
+  @include icon();
+  width: 18px;
+  height: 18px;
+  font-size: 10px;
+}
 .icon-s {
-  @include button-icon();
+  @include icon();
   width: 24px;
   height: 24px;
+  font-size: 14px;
 }
-// .icon-m {
-
-// }
+.icon-m {
+  @include icon();
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+}
+.icon-l {
+  @include icon();
+  width: 37px;
+  height: 37px;
+  font-size: 18px;
+  background: white;
+}
 // BASE CARD STYLES
 @mixin card-style {
   border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   line-height: 24px;
-  width: 380px;
-  height: 110px;
   background-color: $colorWhite;
   box-shadow: 0px 4px 8px -8px #000000;
+  padding: 12px 32px;
 }
 .card-container {
   @include card-style();
+  width: 380px;
+  height: 110px;
 }
 // *-* *-* *-* * *-* *-* *-* *-* *-* *-* *-* *-* *-* *-* /
 @mixin transform($value) {

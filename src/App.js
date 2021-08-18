@@ -1,9 +1,9 @@
 import "./App.css";
-import "./components/buttons/buttons.scss";
 
 import Buttons from "./components/buttons/Buttons";
-import Headers from "./components/headers/Headers";
 import Cards from "./components/cards/Cards";
+import Headers from "./components/headers/Headers";
+import Textfield from "./components/textfield/Textfield";
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
       <Buttons />
       <Cards />
       <Headers />
+      <Textfield />
     </>
   );
 }

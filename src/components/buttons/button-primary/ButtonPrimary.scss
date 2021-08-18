@@ -1,11 +1,8 @@
-@import "../../../styles/main.scss";
-
 .button-primary {
   @extend .btn-container;
   color: $colorWhite;
   background-color: $color-accent-500;
   border: 1px solid $color-neutral-100;
-  box-shadow: $box-shadow-a;
 
   &:hover {
     background-color: $color-accent-400;
@@ -20,23 +17,22 @@
   &:disabled  {
     opacity: $btn-opacity-option;
   }
-}
-
-/* STYLES BTN PRIMARY DESTRUCTIVE */
-.button-primary-destructive {
-  @extend .btn-container;
-  color: $colorWhite;
-  background-color: $color-error-500;
-  border: none;
-
-  &:hover {
-    background-color: $color-error-400;
-  }
-  &:focus {
-    border: 4px solid $color-error-100;
-  }
-  &:active {
+  /* STYLES BTN PRIMARY DESTRUCTIVE */
+  &-destructive {
+    @extend .btn-container;
+    color: $colorWhite;
+    background-color: $color-error-500;
     border: none;
-    background-color: $color-error-700;
+
+    &:hover {
+      background-color: $color-error-400;
+    }
+    &:focus {
+      border: 4px solid $color-error-100;
+    }
+    &:active {
+      border: none;
+      background-color: $color-error-700;
+    }
   }
 }

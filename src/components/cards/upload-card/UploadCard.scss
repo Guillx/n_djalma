@@ -1,6 +1,37 @@
-@import "../../../styles/main.scss";
-
-.upload-card {
+.upload-card-default {
   @extend .card-container;
   border: 1px solid $color-neutral-100;
+}
+
+.upload-card-destructive {
+  @extend .card-container;
+  border: 1px solid red;
+}
+
+.upload-card-top {
+  background: transparent;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.upload-card-filename {
+  background: transparent;
+  font-size: 12px;
+}
+
+.upload-card-progress-bar-default {
+  width: 95%;
+  height: 10px;
+  background-color: $brandSecondary;
+  border-radius: 8px;
+  margin: auto;
+}
+.upload-card-progress-bar-destructive {
+  width: 95%;
+  height: 10px;
+  background-color: $color-error-100;
+  border-radius: 8px;
+  margin: auto;
 }
