@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export const ButtonPrimary = ({
   className,
   disabled,
@@ -11,4 +13,12 @@ export const ButtonPrimary = ({
       <span className="btn-label">{label}</span>
     </button>
   );
+};
+
+ButtonPrimary.propTypes = {
+  className: PropTypes.string.isRequired,
+  disabled: PropTypes.string,
+  icon: PropTypes.symbol.isRequired,
+  label: PropTypes.string.isRequired,
+  handleClick: PropTypes.func.isRequired,
 };

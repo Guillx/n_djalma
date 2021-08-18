@@ -1,0 +1,20 @@
+.section-title {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 5px solid var(--green-underline);
+  margin-bottom: 5rem;
+}
+
+.section-title h1 {
+  font-size: 6.5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-shadow: 5px 5px 7px var(--green-underline);
+}
+
+.corunet-logo {
+  width: 100px;
+  height: 100px;
+}

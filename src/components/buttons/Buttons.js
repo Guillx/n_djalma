@@ -1,4 +1,5 @@
 import Header from "../header/Header";
+import SectionTitle from "../header/SectionTitle";
 
 import { IconButton } from "./icon-button/IconButton";
 import { ButtonPrimary } from "./button-primary/ButtonPrimary";
@@ -14,12 +15,13 @@ function Buttons() {
   }
   function clickPrimaryDestructive(e) {
     e.preventDefault();
-    alert("Primary button destructive! 💣");
+    alert("Primary Button destructive! 💣");
   }
 
   return (
     <>
       <div className="body">
+        <SectionTitle sectionTitle="Buttons" />
         <Header title="Primary Button" />
         <div className="page-content">
           <div className="btn-wrapper-s">
