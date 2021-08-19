@@ -24,7 +24,7 @@ function Buttons() {
         <SectionTitle sectionTitle="Buttons" />
         <Header title="Primary Button" />
         <div className="page-content">
-          <div className="btn-wrapper-s">
+          <div className="btn-wrapper-ps">
             <ButtonPrimary
               className="button-primary"
               label="Label larga para probar que se adapta al width"
@@ -34,7 +34,7 @@ function Buttons() {
             ></ButtonPrimary>
           </div>
 
-          <div className="btn-wrapper-s">
+          <div className="btn-wrapper-ps">
             <ButtonPrimary
               className="button-primary-destructive"
               label="Label"
@@ -48,7 +48,7 @@ function Buttons() {
         {/* ***************************************** */}
         <Header title="Secondary Button" />
         <div className="page-content">
-          <div className="btn-wrapper-s">
+          <div className="btn-wrapper-ps">
             <ButtonSecondary
               className="button-secondary"
               label="Label"
@@ -57,7 +57,7 @@ function Buttons() {
             ></ButtonSecondary>
           </div>
 
-          <div className="btn-wrapper-s">
+          <div className="btn-wrapper-ps">
             <ButtonSecondary
               className="button-secondary-destructive"
               label="Label"
@@ -70,7 +70,7 @@ function Buttons() {
         {/* ***************************************** */}
         <Header title="Tertiary Button" />
         <div className="page-content">
-          <div className="btn-wrapper-s">
+          <div className="btn-wrapper-ps">
             <ButtonTertiary
               className="btn-tertiary"
               label="Label"
@@ -82,7 +82,7 @@ function Buttons() {
         {/* ***************************************** */}
         <Header title="Icon Button" />
         <div className="page-content">
-          <div className="btn-wrapper-s">
+          <div className="btn-wrapper-ps">
             <IconButton
               className="btn-icon-container"
               icon="icon-circle icon-s"
@@ -93,7 +93,7 @@ function Buttons() {
         {/* ***************************************** */}
         <Header title="Button Group" />
         <div className="page-content">
-          <div className="btn-wrapper-l">
+          <div className="btn-wrapper-btn-group">
             <ButtonGroup></ButtonGroup>
           </div>
         </div>
@@ -101,7 +101,7 @@ function Buttons() {
         {/* ***************************************** */}
         <Header title="Button Canvas Control" />
         <div className="page-content">
-          <div className="btn-wrapper-m">
+          <div className="btn-wrapper-bcc">
             <ButtonCanvasControls />
           </div>
         </div>

@@ -9,7 +9,7 @@ function Cards() {
       <SectionTitle sectionTitle="Cards" />
       <Header title="Upload Card" />
       <div className="page-content">
-        <div className="btn-wrapper-m">
+        <div className="btn-wrapper-bcc">
           <UploadCard
             className="upload-card-default"
             uploadCardTop="upload-card-top"
@@ -19,7 +19,7 @@ function Cards() {
           ></UploadCard>
         </div>
 
-        <div className="btn-wrapper-m">
+        <div className="btn-wrapper-bcc">
           <UploadCard
             className="upload-card-destructive"
             uploadCardTop="upload-card-top"

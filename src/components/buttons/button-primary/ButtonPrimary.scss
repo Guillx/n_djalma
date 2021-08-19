@@ -14,9 +14,7 @@
     border: none;
     background-color: $color-accent-700;
   }
-  &:disabled  {
-    opacity: $btn-opacity-option;
-  }
+
   /* STYLES BTN PRIMARY DESTRUCTIVE */
   &-destructive {
     @extend .btn-container;

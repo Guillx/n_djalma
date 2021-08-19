@@ -1,0 +1,19 @@
+@import "./variables";
+
+// BASE BUTTON STYLES
+@mixin button-style {
+  border-radius: 8px;
+  display: flex;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 12px 32px;
+  width: auto;
+  min-width: 135px;
+  box-shadow: $box-shadow-a;
+}
+.btn-container {
+  @include button-style();
+}

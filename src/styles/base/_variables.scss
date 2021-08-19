@@ -67,12 +67,10 @@ $color-warning-500: #ef6226;
 $color-warning-50: #fef1ec;
 
 /********* BTN STYLES *********/
-$btn-MSize-width: 135px;
-$btn-MSize-height: 48px;
-$btn-MSize-padding: 12px 32px;
-$btn-border-radius: 8px;
-$btn-opacity-option: 0.5;
 $box-shadow-a: 0px 2px 4px hsl(0, 0%, 0%, 20%);
+$box-shadow-b: 0px 4px 8px -8px #000000;
+$btn-opacity-disabled: 0.5;
+$border-radius: 8px;
 
 // .mr-1 {
 //   margin-right: 2px;

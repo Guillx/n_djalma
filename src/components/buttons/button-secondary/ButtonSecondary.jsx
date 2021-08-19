@@ -15,7 +15,7 @@ export const ButtonSecondary = ({ className, disabled, icon, label }) => {
       disabled={disabled}
     >
       <i className={icon}></i>
-      <span className="btn-label">{label}</span>
+      <span className="btn-lb">{label}</span>
     </button>
   );
 };

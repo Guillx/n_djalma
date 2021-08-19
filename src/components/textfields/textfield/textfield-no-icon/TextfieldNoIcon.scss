@@ -1,0 +1,24 @@
+.tf-no-icon-empty {
+  @extend .tf-container;
+  border: 1px solid $color-neutral-100;
+  &:hover {
+    // border: 4px solid $color-neutral-50;
+  }
+  &:focus {
+  }
+  &:active {
+  }
+
+  &::placeholder {
+    color: $color-neutral-300;
+  }
+}
+.tf-error {
+  @extend .tf-container;
+  background-color: $color-error-50;
+  border: 1px solid $color-error-500;
+
+  &::placeholder {
+    color: $color-error-200;
+  }
+}

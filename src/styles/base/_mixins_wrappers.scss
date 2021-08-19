@@ -1,0 +1,56 @@
+@import "./variables";
+
+// BUTTONS WRAPPER
+@mixin btn-wrapper {
+  background-color: $colorWhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 49%;
+
+  &:first-child {
+    margin-right: 5px;
+  }
+}
+// BUTTON WRAPPER FOR BUTTON PRIMARY AND SECONDARY
+.btn-wrapper-ps {
+  @include btn-wrapper();
+  width: 557px;
+  height: 160px;
+}
+
+// BUTTON WRAPPER FOR BUTTON CANVAS CONTROL
+.btn-wrapper-bcc {
+  @include btn-wrapper();
+  width: 838px;
+  height: 240px;
+}
+
+// BUTTON WRAPPER FOR BUTTON GROUP
+.btn-wrapper-btn-group {
+  @include btn-wrapper();
+  width: 100%;
+  height: 240px;
+  padding: 0 250px;
+}
+
+// TEXTFIELD WRAPPER FOR TEXTFIELD
+.wrapper-textfield {
+  @include btn-wrapper();
+  width: 100%;
+  height: 200px;
+  padding: 0 250px;
+}
+
+// BUTTON LABEL
+@mixin btn-label {
+  height: 24px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 8px;
+}
+.btn-lb {
+  @include btn-label();
+}

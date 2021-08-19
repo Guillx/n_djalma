@@ -3,7 +3,7 @@ import "./App.css";
 import Buttons from "./components/buttons/Buttons";
 import Cards from "./components/cards/Cards";
 import Headers from "./components/headers/Headers";
-import Textfield from "./components/textfield/Textfield";
+import Textfields from "./components/textfields/Textfields";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Buttons />
       <Cards />
       <Headers />
-      <Textfield />
+      <Textfields />
     </>
   );
 }

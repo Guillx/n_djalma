@@ -340,3 +340,39 @@
 .icon-placeholder:before {
   content: "\e85f";
 } /* '' */
+
+/********************************/
+
+// BUTTON ICON
+@mixin icon {
+  display: flex;
+  background: transparent;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.icon-xs {
+  @include icon();
+  width: 18px;
+  height: 18px;
+  font-size: 10px;
+}
+.icon-s {
+  @include icon();
+  width: 24px;
+  height: 24px;
+  font-size: 14px;
+}
+.icon-m {
+  @include icon();
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+}
+.icon-l {
+  @include icon();
+  width: 37px;
+  height: 37px;
+  font-size: 18px;
+  background: white;
+}
