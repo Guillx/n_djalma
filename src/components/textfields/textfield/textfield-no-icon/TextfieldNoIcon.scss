@@ -22,3 +22,47 @@
     color: $color-error-200;
   }
 }
+
+.form-textfield {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-textfield {
+  font-weight: 700;
+  font-size: 1.3rem;
+  width: 42px;
+  height: 24px;
+  margin-left: 2px;
+}
+
+.btn-send-form {
+  width: 100%;
+  padding: 5px 32px;
+  background-color: $color-success-700;
+  border-radius: $border-radius;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+
+  &:hover {
+    background-color: $color-success-500;
+  }
+}
+.error-input {
+  background: $color-error-50;
+  border: 1px solid $color-error-500;
+}
+.error-label {
+  color: $color-error-500;
+}
+
+.error-text-textfiel {
+  color: $color-error-500;
+  font-size: 13px;
+  line-height: 20px;
+  margin-top: 4px;
+  margin-left: 2px;
+}

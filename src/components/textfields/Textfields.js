@@ -17,13 +17,13 @@ function Textfields() {
               placeholder="e.g. Text"
             />
           </div>
-          <div className="wrapper-textfield">
+          {/* <div className="wrapper-textfield">
             <TextFieldNoIcon
               className="tf-error"
               type="text"
               placeholder="e.g. Text"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </>
