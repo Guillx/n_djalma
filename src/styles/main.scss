@@ -3,11 +3,12 @@
 @import "./base/icons";
 @import "./base/_mixins.scss";
 @import "./base/_variables.scss";
-@import "./base/mixins_wrappers.scss";
-@import "./base/mixins_buttons.scss";
-@import "./base/mixins_cards.scss";
-@import "./base/mixins_textfields";
+@import "./base/wrappers.scss";
+@import "./base/buttons.scss";
+@import "./base/cards.scss";
+@import "./base/textfields";
 
+//***** Componentes *****//
 @import "../components/buttons/buttons.scss";
 @import "../components/cards/cards.scss";
 @import "../components/textfields/textfields.scss";

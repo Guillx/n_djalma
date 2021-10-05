@@ -94,7 +94,7 @@ function Buttons() {
         <Header title="Button Group" />
         <div className="page-content">
           <div className="btn-wrapper-btn-group">
-            <ButtonGroup></ButtonGroup>
+            <ButtonGroup />
           </div>
         </div>
 
