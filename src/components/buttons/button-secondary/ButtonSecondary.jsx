@@ -8,10 +8,19 @@ const proptypes = {
   // handleClick: PropTypes.func.isRequired,
 };
 
-export const ButtonSecondary = ({ className, disabled, icon, label }) => {
+export const ButtonSecondary = ({
+  className,
+  disabled,
+  icon,
+  label,
+  onClick,
+}) => {
   return (
     <button
-      className={`btn-secondary ${className} ${disabled ? "btn-disabled" : ""}`}
+      className={`btn-secondary ${className} ${
+        disabled === true ? "btn-disabled" : ""
+      }`}
+      onClick={onClick}
       disabled={disabled}
     >
       <i className={icon}></i>

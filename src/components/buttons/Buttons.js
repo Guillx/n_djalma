@@ -17,6 +17,10 @@ function Buttons() {
     e.preventDefault();
     alert("Primary Button destructive! 💣");
   }
+  function clickSecondary(e) {
+    e.preventDefault();
+    alert("SECONDARY BUTTON");
+  }
 
   return (
     <>
@@ -30,7 +34,7 @@ function Buttons() {
               label="Label larga para probar que se adapta al width"
               icon="icon-circle icon-s"
               onClick={clickPrimary}
-              disabled="true"
+              disabled={false}
             ></ButtonPrimary>
           </div>
 
@@ -40,7 +44,7 @@ function Buttons() {
               label="Label"
               icon="icon-delete icon-s"
               onClick={clickPrimaryDestructive}
-              disabled="false"
+              disabled={false}
             ></ButtonPrimary>
           </div>
         </div>
@@ -53,7 +57,8 @@ function Buttons() {
               className="button-secondary"
               label="Label"
               icon="icon-circle icon-s"
-              // disabled="true"
+              disabled={false}
+              onClick={clickSecondary}
             ></ButtonSecondary>
           </div>
 
@@ -62,7 +67,7 @@ function Buttons() {
               className="button-secondary-destructive"
               label="Label"
               icon="icon-delete icon-s"
-              // disabled="true"
+              disabled={false}
             ></ButtonSecondary>
           </div>
         </div>
@@ -74,7 +79,7 @@ function Buttons() {
             <ButtonTertiary
               className="btn-tertiary"
               label="Label"
-              // disabled="true"
+              disabled={false}
             ></ButtonTertiary>
           </div>
         </div>
@@ -86,6 +91,7 @@ function Buttons() {
             <IconButton
               className="btn-icon-container"
               icon="icon-circle icon-s"
+              disabled={false} //TODO
             ></IconButton>
           </div>
         </div>

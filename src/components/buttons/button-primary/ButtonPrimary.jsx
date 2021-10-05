@@ -1,11 +1,26 @@
 import PropTypes from "prop-types";
 
 let proptypes = {
-  className: PropTypes.string.isRequired,
+  /*
+   * La clase del tipo de botón: normal o destructive
+   */
+  className: PropTypes.string,
+  /*
+   * Muestra el botón en estado 'disabled'
+   */
   disabled: PropTypes.bool,
-  icon: PropTypes.string.isRequired,
+  /*
+   * Nombre del icono
+   */
+  icon: PropTypes.string,
+  /*
+   * Label que se mostrará en el botón
+   */
   label: PropTypes.string.isRequired,
-  onClick: PropTypes.func,
+  /*
+   * Click handler
+   */
+  onClick: PropTypes.func.isRequired,
 };
 
 export const ButtonPrimary = ({
@@ -18,7 +33,7 @@ export const ButtonPrimary = ({
   return (
     <button
       className={`btn-primary ${className} ${
-        disabled === "true" ? "btn-disabled" : ""
+        disabled === true ? "btn-disabled" : ""
       }`}
       onClick={onClick}
       disabled={disabled}
