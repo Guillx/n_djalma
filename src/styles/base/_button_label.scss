@@ -1,0 +1,15 @@
+// BUTTON LABEL
+@mixin btn-label {
+  max-height: 48px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 8px;
+}
+.btn-lb {
+  @include btn-label();
+}

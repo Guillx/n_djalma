@@ -30,7 +30,7 @@ function Buttons() {
               label="Label larga para probar que se adapta al width"
               icon="icon-circle icon-s"
               onClick={clickPrimary}
-              // disabled="true"
+              disabled="true"
             ></ButtonPrimary>
           </div>
 
@@ -40,7 +40,7 @@ function Buttons() {
               label="Label"
               icon="icon-delete icon-s"
               onClick={clickPrimaryDestructive}
-              // disabled="true"
+              disabled="false"
             ></ButtonPrimary>
           </div>
         </div>

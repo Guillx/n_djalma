@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const proptypes = {
+let proptypes = {
   className: PropTypes.string.isRequired,
   disabled: PropTypes.bool,
   icon: PropTypes.string.isRequired,
@@ -17,7 +17,9 @@ export const ButtonPrimary = ({
 }) => {
   return (
     <button
-      className={`btn-primary ${className} ${disabled ? "btn-disabled" : ""}`}
+      className={`btn-primary ${className} ${
+        disabled === "true" ? "btn-disabled" : ""
+      }`}
       onClick={onClick}
       disabled={disabled}
     >
