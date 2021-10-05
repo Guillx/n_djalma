@@ -5,7 +5,7 @@ const proptypes = {
   disabled: PropTypes.bool,
   icon: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
-  handleClick: PropTypes.func,
+  onClick: PropTypes.func,
 };
 
 export const ButtonPrimary = ({

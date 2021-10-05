@@ -44,7 +44,10 @@
 
 // BUTTON LABEL
 @mixin btn-label {
-  height: auto;
+  max-height: 48px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
   background: transparent;
   display: flex;
   align-items: center;
