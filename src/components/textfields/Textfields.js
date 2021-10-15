@@ -15,6 +15,7 @@ function Textfields() {
               className="tf-no-icon-empty"
               type="text"
               placeholder="e.g. Text"
+              disabled={false}
             />
           </div>
           {/* <div className="wrapper-textfield">

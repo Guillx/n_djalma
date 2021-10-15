@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 
-export const TextFieldNoIcon = ({ className, type, placeholder }) => {
+export const TextFieldNoIcon = ({ className, type, placeholder, disabled }) => {
   const {
     register,
     formState: { errors },
@@ -24,7 +24,9 @@ export const TextFieldNoIcon = ({ className, type, placeholder }) => {
         name="requiredField"
         type={type}
         placeholder={placeholder}
-        className={`tf-no-icon-empty ${errors.testText && "error-input"}`}
+        className={`tf-no-icon-empty ${errors.testText && "error-input"} ${
+          disabled === true ? "btn-disabled" : ""
+        }`}
         {...register("testText", { required: true })}
       />
       {errors.testText?.type === "required" && (
